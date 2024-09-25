@@ -5,19 +5,34 @@
 
     </head>
     <body>
-        <h1>Ok</h1>
-        <p>Im lazy</p>
+        <div id="auth">
+            <h1>AUThENTIcaTion</h1>
+            <input type="password" name="password" id="pass">
+            <button onclick="go()">go</button>
+        </div>
+        <div id="content" style="display:none">
+            <h1>ya got the content, hooray!!!!1111</h1>
+            <p>balls</p>
+        </div>
     </body>
 </html>
 
 <script>
-// ask for password
-var input = prompt("please enter the alpha passowrd")
-var stuff = document.getElementById("body")
-stuff.style.display = "none"
-if (input === "the alpha password") { // TEMPPPPPP
-    stuff.style.display = "block"
-} else {
-    stuff.style.display = "none"
-}
+function go() {
+    var auth = document.getElementById("auth")
+    var content = document.getElementById("content")
+    var input = document.getElementById("pass").value
+    if (input === "ok password") { // TEMPPPPPPPPPPPPP
+        auth.style.display = "none"
+        content.style.display = "block"
+    } else {
+        alert("DENIEEDDDDDDDDDDDDD")
+        close()
+    }
+} 
 </script>
+
+<style>
+/* oh man */
+
+</style>
